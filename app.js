@@ -2,52 +2,132 @@ document.addEventListener('DOMContentLoaded', () => {
     //card options
     const cardArray = [
         {
-            name: 'fries',
-            img: 'images/fries.png'
+            name: 'image7',
+            img: 'images/image7.png'
         },
         {
-            name: 'fries',
-            img: 'images/fries.png'
+            name: 'image7',
+            img: 'images/image7.png'
         },
         {
-            name: 'cheeseburger',
-            img: 'images/cheeseburger.png'
+            name: 'image13',
+            img: 'images/image13.png'
         },
         {
-            name: 'cheeseburger',
-            img: 'images/cheeseburger.png'
+            name: 'image13',
+            img: 'images/image13.png'
         },
         {
-            name: 'hotdog',
-            img: 'images/hotdog.png'
+            name: 'image4',
+            img: 'images/image4.png'
         },
         {
-            name: 'hotdog',
-            img: 'images/hotdog.png'
+            name: 'image4',
+            img: 'images/image4.png'
         },
         {
-            name: 'iceCream',
-            img: 'images/iceCream.png'
+            name: 'heartCloud',
+            img: 'images/heartCloud.png'
         },
         {
-            name: 'iceCream',
-            img: 'images/iceCream.png'
+            name: 'heartCloud',
+            img: 'images/heartCloud.png'
         },
         {
-            name: 'pizza',
-            img: 'images/pizza.png'
+            name: 'sunset',
+            img: 'images/sunset.png'
         },
         { 
-            name: 'pizza',
-            img: 'images/pizza.png'
+            name: 'sunset',
+            img: 'images/sunset.png'
         },
         {
-            name: 'shake',
-            img: 'images/shake.png'
+            name: 'image2',
+            img: 'images/image2.png'
         },
         {
-            name: 'shake',
-            img: 'images/shake.png'
+            name: 'image2',
+            img: 'images/image2.png'
+        },
+        {
+            name: 'image22',
+            img: 'images/image22.png'
+        },
+        { 
+            name: 'image22',
+            img: 'images/image22.png'
+        },
+        {
+            name: 'image19',
+            img: 'images/image19.png'
+        },
+        { 
+            name: 'image19',
+            img: 'images/image19.png'
+        },
+        {
+            name: 'image18',
+            img: 'images/image18.png'
+        },
+        { 
+            name: 'image18',
+            img: 'images/image18.png'
+        },
+        {
+            name: 'image16',
+            img: 'images/image16.png'
+        },
+        { 
+            name: 'image16',
+            img: 'images/image16.png'
+        },
+        {
+            name: 'image12',
+            img: 'images/image12.png'
+        },
+        { 
+            name: 'image12',
+            img: 'images/image12.png'
+        },
+        {
+            name: 'jellyfish',
+            img: 'images/jellyfish.png'
+        },
+        { 
+            name: 'jellyfish',
+            img: 'images/jellyfish.png'
+        }, 
+        {
+            name: 'image20',
+            img: 'images/image20.png'
+        },
+        { 
+            name: 'image20',
+            img: 'images/image20.png'
+        }, 
+        {
+            name: 'image9',
+            img: 'images/image9.png'
+        },
+        { 
+            name: 'image9',
+            img: 'images/image9.png'
+        },
+        {
+            name: 'image1',
+            img: 'images/image1.png'
+        },
+        { 
+            name: 'image1',
+            img: 'images/image1.png'
+        }, 
+        {
+            name: 'image3',
+            img: 'images/image3.png'
+        },
+        { 
+            name: 'image3',
+            img: 'images/image3.png'
         }
     ]
 
@@ -63,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
-            card.setAttribute('src', 'images/blank.png')
+            card.setAttribute('src', 'images/image11.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -77,20 +157,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
 
         if(optionOneId == optionTwoId) {
-            cards[optionOneId].setAttribute('src', 'images/blank.png')
-            cards[optionTwoId].setAttribute('src', 'images/blank.png')
+            cards[optionOneId].setAttribute('src', 'images/image11.png')
+            cards[optionTwoId].setAttribute('src', 'images/image11.png')
             alert('You have clicked the same image!')
         }
         else if (cardsChosen[0] === cardsChosen[1]) {
             alert('You found a match')
-            cards[optionOneId].setAttribute('src', 'images/white.png')
-            cards[optionTwoId].setAttribute('src', 'images/white.png')
+            cards[optionOneId].setAttribute('src', 'images/blank.png')
+            cards[optionTwoId].setAttribute('src', 'images/blank.png')
             cards[optionOneId].removeEventListener('click', flipCard)
             cards[optionTwoId].removeEventListener('click', flipCard)
             cardsWon.push(cardsChosen)
         } else {
-            cards[optionOneId].setAttribute('src', 'images/blank.png')
-            cards[optionTwoId].setAttribute('src', 'images/blank.png')
+            cards[optionOneId].setAttribute('src', 'images/image11.png')
+            cards[optionTwoId].setAttribute('src', 'images/image11.png')
             alert('Sorry, try again')
         }
         cardsChosen = []

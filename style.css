@@ -4,3 +4,53 @@
   height: 300px;
   width: 400 px;
 }
+
+body {
+  padding-bottom: 2rem;
+  justify-content: center;
+  background-color: rgb(228, 173, 205);
+}
+
+h1 {
+  color: rgb(214, 49, 131);
+  text-align: center;
+  font-family: "Courgette";
+  font-size: 4rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  color: rgb(214, 49, 131);
+  margin-left: 6.5rem;
+  margin-bottom: 3rem;
+  font-family: "Courgette";
+  font-size: 2rem;
+}
+
+img {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.container-fluid {
+  width: 90%;
+  margin-left: 6.5rem;
+}
+
+#score {
+  border: 2rem;
+}
+
+span {
+  border: 2rem;
+}
+
+.appendChild {
+  border: 2rem;
+}
+.card {
+  border: 1rem;
+}
+#result {
+  color: rgb(214, 49, 131);
+}
